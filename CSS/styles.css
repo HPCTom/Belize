@@ -1,0 +1,32 @@
+
+.nav {
+  width: 550px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+  font-family: Georgia, Arial, sans-serif;
+  font-size: 20px;
+  background-color: grey;
+}
+
+.nav_items {
+  padding: 0;
+  list-style: none;
+}
+
+.nav_item {
+  float: left;
+  padding : 0;
+  margin-right: 25px;
+}
+
+.nav_item_arrow {
+  float: left;
+  padding: 0;
+  list-style: none;
+}
+
+.submenu_item {
+  padding: 0;
+  list-style: none;
+  padding : 0;
+}
