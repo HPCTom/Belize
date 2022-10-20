@@ -1,3 +1,6 @@
+const navbar = document.getElementById('navbar')
 
-document.getElementById("video").innerHTML = "Paragraph changed.";
+window.addEventListener('scroll',()=>{
+    navbar.classList.toggle('header__sticky',window.scrollY > 0)
+})
 
