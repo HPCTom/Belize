@@ -1,7 +1,20 @@
+/* :root {
+  --swap_width: "600px";
+} */
+
 *{
   padding: 0;
   margin: 0; 
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  background: url("/Images/11.jpg"); 
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 li {
@@ -13,16 +26,103 @@ nav .logo{
   height: height;
 }
 
-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: 'Poppins',sans-serif;
-  background-color: rgb(75, 223, 223);
+
+@media screen and (min-width: 800px){
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins',sans-serif;
+    /* background-color: rgb(75, 223, 223); */
+  }
+
+  nav .navbar_elements{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aquamarine; */
+  }
+
+  nav .navbar_elements a {
+    color: #FFB6C1;
+    transition: color 2s 
+  }
+  
+  nav .navbar_elements a:hover {
+    color: #FF1493;
+  }
+  
+  nav .navbar_element{
+    font-size:20px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  nav .navbar .close {
+    display: none;
+  }
 }
 
-nav .navbar_element{
-  display: flex;
-  justify-content: space-around;
-  background-color: aquamarine;
-}
+
+@media screen and (max-width: 800px){
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    font-family: 'Poppins',sans-serif;
+
+  }
+
+  nav .navbar{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+  }
+
+  nav .navbar_elements a {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  nav .navbar a:hover {
+    color: #111;
+  }
+
+  nav .navbar.active {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+  }
+  
+  nav .navbar .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+
+  nav .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 0, 0);
+    margin: 6px 0;
+  }
+
+  
+  }

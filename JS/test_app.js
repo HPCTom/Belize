@@ -1,4 +1,4 @@
-var sidenav = document.getElementById("my_navbar_elements");
+var sidenav = document.getElementById("mySidenav");
 var openBtn = document.getElementById("openBtn");
 var closeBtn = document.getElementById("closeBtn");
 
@@ -14,4 +14,3 @@ function openNav() {
 function closeNav() {
   sidenav.classList.remove("active");
 }
-
